@@ -83,6 +83,10 @@ def purchase_game(user_id: int, game_id: int):
     session.commit()
     return {"message": "Game purchased successfully"}
 
+@app.post("/games/add")
+def addgame():
+    pass
+
 session.add_all([game1, game2, game3])
 session.commit()
 
